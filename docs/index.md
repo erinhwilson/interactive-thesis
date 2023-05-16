@@ -5,7 +5,10 @@ title: Erin's Interactive Thesis!
 Please enjoy this interactive visualization gallery compiled from various charts made throughout my PhD work! I found it quite valubable to be able to dig in and explore data interactively as I tried to figure out what was going on. Most charts are made in Python using Altair. 
 
 # Visualization gallery
+## test test
+### test test test
 
+other stuff 
 <div>
     <table>
         <tr>
@@ -56,3 +59,4 @@ Please enjoy this interactive visualization gallery compiled from various charts
     </table>
 </div>
 
+Later stuff

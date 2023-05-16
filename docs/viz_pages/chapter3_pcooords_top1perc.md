@@ -1,3 +1,8 @@
+---
+title: Erin's Interactive Thesis
+description: A sampling of interactive data visualizations created throughout my PhD research.
+---
+
 # Top 1% gene set, TPM expression profiles
 
 ### Interactive plot instructions:
