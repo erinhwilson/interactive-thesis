@@ -31,9 +31,9 @@ Please enjoy this interactive visualization gallery compiled from various charts
                     <img src="img/volcano_3window.gif" alt="intra-operon distances" width="350"/>
                     <p style="text-align: center">Intra-operon distances</p>
                 </a>
+            </td>
         </tr>
         <tr>
-            </td>
             <td>
                 <a href="viz_pages/chapter3_tradeoff.html" title="Go to interactive visualization" display='inline'>
                     <img src="img/volcano_3window.gif" alt="tpm vs group size tradeoff" width="400"/>

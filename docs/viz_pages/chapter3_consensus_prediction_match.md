@@ -1,0 +1,59 @@
+---
+title: Erin's Interactive Thesis
+description: A sampling of interactive data visualizations created throughout my PhD research.
+---
+
+# Top 3% expressed genes, similarity of predicted promoter to derived consensus
+
+### Interactive plot instructions:
+* Hover over points and lines for more information about each motif
+* Click+drag mouse to pan
+* Use scroll wheel to zoom
+
+{::nomarkdown}
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis" style="position:relative; left:-10%;"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300, "stroke": null}, "axis": {"labelFontSize": 14, "titleFontSize": 14}, "title": {"anchor": "middle", "fontSize": 16}}, "hconcat": [{"mark": "point", "encoding": {"color": {"type": "quantitative", "field": "total_score", "scale": {"scheme": "viridis"}, "sort": "descending"}, "size": {"value": 100}, "tooltip": [{"type": "nominal", "field": "desc"}, {"type": "nominal", "field": "hex1"}, {"type": "nominal", "field": "hex2"}, {"type": "quantitative", "field": "total_score"}], "x": {"type": "quantitative", "axis": {"title": "-35 Consensus Match"}, "field": "hex1_score"}, "y": {"type": "quantitative", "axis": {"title": "-10 Consensus Match"}, "field": "hex2_score"}}, "height": 200, "selection": {"selector005": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "width": 200}, {"mark": "point", "encoding": {"color": {"type": "quantitative", "field": "total_score", "scale": {"scheme": "viridis"}, "sort": "descending"}, "size": {"value": 100}, "tooltip": [{"type": "nominal", "field": "desc"}, {"type": "nominal", "field": "hex1"}, {"type": "nominal", "field": "hex2"}, {"type": "quantitative", "field": "total_score"}], "x": {"type": "quantitative", "axis": {"grid": false, "labels": false, "ticks": true, "values": [0]}, "field": "jitter", "scale": {}, "title": null}, "y": {"type": "quantitative", "axis": {"title": "Total Consensus Score"}, "field": "total_score"}}, "height": 200, "selection": {"selector006": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "transform": [{"calculate": "sqrt(-2*log(random()))*cos(2*PI*random())", "as": "jitter"}], "width": 75}], "data": {"name": "data-2a594d1cd6d8f25bebde6b23cfae1a8f"}, "title": "Consensus motif match scores to promoter predictions", "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-2a594d1cd6d8f25bebde6b23cfae1a8f": [{"locus_tag": "EQU24_RS02895", "desc": "EQU24_RS02895||exosortase system-associated protein, TIGR04073 family", "motif_block": "TTGACAACATTCAACCTTTAGGCTATTGT", "hex1": "TTGACA", "hex1_score": 8.353385925292969, "hex2": "TATTGT", "hex2_score": 5.705158710479736, "total_score": 14.058544158935547}, {"locus_tag": "EQU24_RS02970", "desc": "EQU24_RS02970|pqqA|pyrroloquinoline quinone precursor peptide PqqA", "motif_block": "TTGCTTTGCCTAAATTATCGTCGTATACT", "hex1": "TTGCTT", "hex1_score": 5.21547794342041, "hex2": "TATACT", "hex2_score": 7.691535472869873, "total_score": 12.907012939453125}, {"locus_tag": "EQU24_RS03495", "desc": "EQU24_RS03495||cold-shock protein", "motif_block": "TTGACTTTGGGGAAATAAGGCATAGAAT", "hex1": "TTGACT", "hex1_score": 7.306080341339111, "hex2": "TAGAAT", "hex2_score": 5.739587783813477, "total_score": 13.04566764831543}, {"locus_tag": "EQU24_RS07185", "desc": "EQU24_RS07185||glutamate--ammonia ligase", "motif_block": "TTGTAATTGAGATCAATTAGTTGCTTATAT", "hex1": "TTGTAA", "hex1_score": 5.040390968322754, "hex2": "TTATAT", "hex2_score": 3.9337832927703857, "total_score": 8.974174499511719}, {"locus_tag": "EQU24_RS07390", "desc": "EQU24_RS07390|rpmI|50S ribosomal protein L35", "motif_block": "CTCAAGGAAACTTACTATTTTTAATCG", "hex1": "CTCAAG", "hex1_score": -0.8016259670257568, "hex2": "TAATCG", "hex2_score": 3.369715929031372, "total_score": 2.5680899620056152}, {"locus_tag": "EQU24_RS10370", "desc": "EQU24_RS10370|acpP|acyl carrier protein", "motif_block": "GTGATATTTTTATAATATAAAGTATAAT", "hex1": "GTGATA", "hex1_score": 4.3808393478393555, "hex2": "TATAAT", "hex2_score": 8.462053298950195, "total_score": 12.84289264678955}, {"locus_tag": "EQU24_RS12095", "desc": "EQU24_RS12095||cytochrome c", "motif_block": "TTGAATTTTTACGTTAAATCCCCTATTCT", "hex1": "TTGAAT", "hex1_score": 5.952443599700928, "hex2": "TATTCT", "hex2_score": 6.98526668548584, "total_score": 12.93770980834961}, {"locus_tag": "EQU24_RS12525", "desc": "EQU24_RS12525|ssrA|transfer-messenger RNA", "motif_block": "TTGCTAATGATGAATTTAATTGTTAATAT", "hex1": "TTGCTA", "hex1_score": 6.262783527374268, "hex2": "TAATAT", "hex2_score": 6.618281364440918, "total_score": 12.881065368652344}, {"locus_tag": "EQU24_RS15100", "desc": "EQU24_RS15100||HU family DNA-binding protein", "motif_block": "TTGACACTTTATGAGTCGTGTTGATATAAA", "hex1": "TTGACA", "hex1_score": 8.353385925292969, "hex2": "TATAAA", "hex2_score": 5.984006404876709, "total_score": 14.337392807006836}, {"locus_tag": "EQU24_RS15535", "desc": "EQU24_RS15535||hypothetical protein", "motif_block": "TTTACTAAGAAAGGCTGATCAAGGTATAGT", "hex1": "TTTACT", "hex1_score": 4.75588321685791, "hex2": "TATAGT", "hex2_score": 6.4114274978637695, "total_score": 11.16731071472168}, {"locus_tag": "EQU24_RS15705", "desc": "EQU24_RS15705||cold-shock protein", "motif_block": "TCGATAGACACATCCCATACCTTTTATTCT", "hex1": "TCGATA", "hex1_score": 5.5376434326171875, "hex2": "TATTCT", "hex2_score": 6.98526668548584, "total_score": 12.522910118103027}, {"locus_tag": "EQU24_RS15745", "desc": "EQU24_RS15745||cold-shock protein", "motif_block": "TTGCTTTCCTGATTAGCCGGCTTTATTAT", "hex1": "TTGCTT", "hex1_score": 5.21547794342041, "hex2": "TATTAT", "hex2_score": 7.75578498840332, "total_score": 12.97126293182373}, {"locus_tag": "EQU24_RS16195", "desc": "EQU24_RS16195||hypothetical protein", "motif_block": "TTGACATGTTTCTTCGATCATGTTAAAAA", "hex1": "TTGACA", "hex1_score": 8.353385925292969, "hex2": "TAAAAA", "hex2_score": 4.846502780914307, "total_score": 13.199888229370117}, {"locus_tag": "EQU24_RS18060", "desc": "EQU24_RS18060|rplM|50S ribosomal protein L13", "motif_block": "TTTATTGGGTCCTAAACAGAATAAACA", "hex1": "TTTATT", "hex1_score": 4.624638557434082, "hex2": "TAAACA", "hex2_score": 4.075984954833984, "total_score": 8.700623512268066}, {"locus_tag": "EQU24_RS18140", "desc": "EQU24_RS18140|moxF|PQQ-dependent dehydrogenase, methanol/ethanol family", "motif_block": "TTGTAACAACAAACACCGCAATCAATAG", "hex1": "TTGTAA", "hex1_score": 5.040390968322754, "hex2": "CAATAG", "hex2_score": 1.1046102046966553, "total_score": 6.145001411437988}, {"locus_tag": "EQU24_RS18355", "desc": "EQU24_RS18355||hypothetical protein", "motif_block": "TTTATAAGATTTCCGTTTATTTTATAAT", "hex1": "TTTATA", "hex1_score": 5.671944618225098, "hex2": "TATAAT", "hex2_score": 8.462053298950195, "total_score": 14.133997917175293}, {"locus_tag": "EQU24_RS19105", "desc": "EQU24_RS19105|rpsT|30S ribosomal protein S20", "motif_block": "TTGACAATAGTAGCACTACGCAAGATAAT", "hex1": "TTGACA", "hex1_score": 8.353385925292969, "hex2": "GATAAT", "hex2_score": 5.426429748535156, "total_score": 13.779815673828125}, {"locus_tag": "EQU24_RS19315", "desc": "EQU24_RS19315|pmoC|methane monooxygenase/ammonia monooxygenase subunit C", "motif_block": "TTGACAAGCCTTTTCGAAATGATAAACT", "hex1": "TTGACA", "hex1_score": 8.353385925292969, "hex2": "TAAACT", "hex2_score": 6.554031848907471, "total_score": 14.907417297363281}, {"locus_tag": "EQU24_RS19765", "desc": "EQU24_RS19765|rnpB|RNase P RNA component class A", "motif_block": "CCGACATGTTTTTAATTCGCGTATAAT", "hex1": "CCGACA", "hex1_score": 3.049978017807007, "hex2": "TATAAT", "hex2_score": 8.462053298950195, "total_score": 11.512031555175781}, {"locus_tag": "EQU24_RS21040", "desc": "EQU24_RS21040|rpmB|50S ribosomal protein L28", "motif_block": "TTCTCGTTGAACGGACGTTTTTTCTTTCG", "hex1": "TTCTCG", "hex1_score": 1.2115628719329834, "hex2": "CTTTCG", "hex2_score": -1.212902545928955, "total_score": -0.0013396739959716797}, {"locus_tag": "EQU24_RS21560", "desc": "EQU24_RS21560|fbaA|class II fructose-bisphosphate aldolase", "motif_block": "TTGTCGCGAAAACGGGTTTGTTTTTTGAT", "hex1": "TTGTCG", "hex1_score": 4.247186660766602, "hex2": "TTTGAT", "hex2_score": 2.4083218574523926, "total_score": 6.655508518218994}, {"locus_tag": "EQU24_RS21565", "desc": "EQU24_RS21565||transaldolase", "motif_block": "CCGATATAGGAATTTGCTGATTAAATACT", "hex1": "CCGATA", "hex1_score": 2.918733596801758, "hex2": "AATACT", "hex2_score": 3.9189460277557373, "total_score": 6.837679862976074}, {"locus_tag": "EQU24_RS21665", "desc": "EQU24_RS21665|trxA|thioredoxin TrxA", "motif_block": "TTGACAAAATAACGCCGGCACTCCTATAGT", "hex1": "TTGACA", "hex1_score": 8.353385925292969, "hex2": "TATAGT", "hex2_score": 6.4114274978637695, "total_score": 14.764813423156738}, {"locus_tag": "EQU24_RS21720", "desc": "EQU24_RS21720||hypothetical protein", "motif_block": "TTGCTTTTATTTTGGGAATGAGGATAAT", "hex1": "TTGCTT", "hex1_score": 5.21547794342041, "hex2": "GATAAT", "hex2_score": 5.426429748535156, "total_score": 10.641907691955566}, {"locus_tag": "EQU24_RS22110", "desc": "EQU24_RS22110||hypothetical protein", "motif_block": "TTGATATTGCGGCAATCTACGTTAGAAT", "hex1": "TTGATA", "hex1_score": 8.22214126586914, "hex2": "TAGAAT", "hex2_score": 5.739587783813477, "total_score": 13.961729049682617}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
+{:/}
+
+### Figure description
+Similarity of -35 and -10 promoter predictions for the top 3% genes to the consensus motif derived from all predictions.
+* Left panel: -35 motif similiarity vs -10 motif similarity of a given promoter prediction.
+* Right panel: sum of -35 and -10 motif similarity for each promoter prediction.
+
+
+<button onclick="location.href='https://erinhwilson.github.io/interactive-thesis'" 
+        type="button">Return to Main Page
+</button>
