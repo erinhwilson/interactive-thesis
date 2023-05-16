@@ -1,5 +1,6 @@
 ---
 title: Erin's Interactive Thesis
+description: A sampling of interactive data visualizations created throughout my PhD research.
 ---
 
 # <i>M. buryatense</i> intra-operon upstream distances
