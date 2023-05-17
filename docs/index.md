@@ -5,15 +5,14 @@ title: Erin's Interactive Thesis!
 Please enjoy this interactive visualization gallery compiled from various charts made throughout my PhD work! I found it quite valubable to be able to dig in and explore data interactively as I tried to figure out what was going on. Most charts are made in Python using Altair. 
 
 # Visualization gallery
-## test test
-### test test test
+### [PAGE STILL UNDER CONSTRUCTION]
 
-other stuff 
+
 <div>
     <table>
         <tr>
             <th colspan="3">
-                <p>From Chapter 3</p>
+                <p>From Thesis Chapter 3</p>
             </th>
         </tr>
         <tr>
@@ -53,6 +52,30 @@ other stuff
                 <a href="viz_pages/chapter3_posIC_vs_enrichment.html" title="Go to interactive visualization" display='inline'>
                     <img src="img/chapter3_posIC_vs_enrichment.gif" alt="promoter prediction IC vs enrichment" width="400"/>
                     <p style="text-align: center">Motif prediction info content vs enrichment in promoter regions </p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <th colspan="2">
+                <p>From Thesis Chapter 2</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <a href="viz_pages/chapter2_PC12_zoom.html" title="Go to interactive visualization" display='inline'>
+                    <img src="img/chapter2_PC12_zoom.gif" alt="top 3perc gene set" width="350"/>
+                    <p style="text-align: center">Top 3% gene expression profiles</p>
+                </a>
+            </td>
+            <td>
+                <a href="viz_pages/chapter2_PC1234.html" title="Go to interactive visualization" display='inline'>
+                    <img src="img/chapter2_PC1234.gif" alt="top 1perc gene set" width="350"/>
+                    <p style="text-align: center">Top 1% gene expression profiles</p>
                 </a>
             </td>
         </tr>
