@@ -7,30 +7,25 @@ Please enjoy this interactive visualization gallery compiled from various charts
 # Visualization gallery
 ### [PAGE STILL UNDER CONSTRUCTION]
 
-
+### From Thesis Chapter 3
 <div>
     <table>
         <tr>
-            <th colspan="3">
-                <p>From Thesis Chapter 3</p>
-            </th>
-        </tr>
-        <tr>
             <td>
                 <a href="viz_pages/chapter3_pcooords_top3perc.html" title="Go to interactive visualization" display='inline'>
-                    <img src="img/chapter3_pcoords_top3perc.gif" alt="top 3perc gene set" width="350"/>
+                    <img src="img/chapter3_pcoords_top3perc.gif" alt="top 3perc gene set" width="400"/>
                     <p style="text-align: center">Top 3% gene expression profiles</p>
                 </a>
             </td>
             <td>
                 <a href="viz_pages/chapter3_pcooords_top1perc.html" title="Go to interactive visualization" display='inline'>
-                    <img src="img/chapter3_pcoords_top1perc.gif" alt="top 1perc gene set" width="350"/>
+                    <img src="img/chapter3_pcoords_top1perc.gif" alt="top 1perc gene set" width="400"/>
                     <p style="text-align: center">Top 1% gene expression profiles</p>
                 </a>
             </td>
             <td>
                 <a href="viz_pages/chapter3_mbur_operon_dist.html" title="Go to interactive visualization" display='inline'>
-                    <img src="img/chapter3_mbur_operon_dist.gif" alt="intra-operon distances" width="350"/>
+                    <img src="img/chapter3_mbur_operon_dist.gif" alt="intra-operon distances" width="400"/>
                     <p style="text-align: center">Intra-operon distances</p>
                 </a>
             </td>
@@ -58,23 +53,19 @@ Please enjoy this interactive visualization gallery compiled from various charts
     </table>
 </div>
 
+### From Thesis Chapter 2
 <div>
     <table>
         <tr>
-            <th colspan="2">
-                <p>From Thesis Chapter 2</p>
-            </th>
-        </tr>
-        <tr>
             <td>
                 <a href="viz_pages/chapter2_PC12_zoom.html" title="Go to interactive visualization" display='inline'>
-                    <img src="img/chapter2_PC12_zoom.gif" alt="top 3perc gene set" width="350"/>
+                    <img src="img/chapter2_PC12_zoom.gif" alt="top 3perc gene set" width="400"/>
                     <p style="text-align: center">Top 3% gene expression profiles</p>
                 </a>
             </td>
             <td>
                 <a href="viz_pages/chapter2_PC1234.html" title="Go to interactive visualization" display='inline'>
-                    <img src="img/chapter2_PC1234.gif" alt="top 1perc gene set" width="350"/>
+                    <img src="img/chapter2_PC1234.gif" alt="top 1perc gene set" width="400"/>
                     <p style="text-align: center">Top 1% gene expression profiles</p>
                 </a>
             </td>
