@@ -59,14 +59,14 @@ Please enjoy this interactive visualization gallery compiled from various charts
         <tr>
             <td>
                 <a href="viz_pages/chapter2_PC12_zoom.html" title="Go to interactive visualization" display='inline'>
-                    <img src="img/chapter2_PC12_zoom.gif" alt="top 3perc gene set" width="400"/>
-                    <p style="text-align: center">Top 3% gene expression profiles</p>
+                    <img src="img/chapter2_PC12_zoom.gif" alt="pc12" width="400"/>
+                    <p style="text-align: center">PCA components 1 and 2</p>
                 </a>
             </td>
             <td>
                 <a href="viz_pages/chapter2_PC1234.html" title="Go to interactive visualization" display='inline'>
-                    <img src="img/chapter2_PC1234.gif" alt="top 1perc gene set" width="400"/>
-                    <p style="text-align: center">Top 1% gene expression profiles</p>
+                    <img src="img/chapter2_PC1234.gif" alt="pc1234" width="400"/>
+                    <p style="text-align: center">PCA components 1-4</p>
                 </a>
             </td>
         </tr>
